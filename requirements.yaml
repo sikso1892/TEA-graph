@@ -1,4 +1,4 @@
-name: TEA_graph
+name: TA_01
 channels:
   - conda-forge
   - defaults
@@ -106,7 +106,7 @@ dependencies:
     - termcolor==1.1.0
     - threadpoolctl==3.0.0
     - tomli==1.2.2
-    - torch==1.9.1+cu111
+    - torch==1.10.1+cu111
     - torch-cluster==1.5.9
     - torch-ema==0.3
     - torch-geometric==1.7.1

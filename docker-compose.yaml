@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  TEA-graph:
+    build: .
+    container_name: TEA-graph
+    image: tea-graph
+    volumes:
+      - .:/work
+      - /data01:/data01
+    ports:
+      - 8000:8000
+    working_dir: /work
+    stdin_open: true
+    tty: true
+                                                              
