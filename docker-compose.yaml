@@ -8,6 +8,10 @@ services:
     volumes:
       - .:/work
       - /data01:/data01
+      - /home:/home
+      - /etc/pam.d:/etc/pam.d
+      - /etc/shadow:/etc/shadow
+      - /etc/passwd:/etc/passwd
     ports:
       - 8000:8000
     working_dir: /work

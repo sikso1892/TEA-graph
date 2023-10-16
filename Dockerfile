@@ -18,7 +18,7 @@ WORKDIR /work
 
 # TEA-Graph 의존성 패키지
 RUN pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
-
+RUN pip install torch_geometric
 RUN pip install pandas scikit-learn tqdm openslide-python networkx scikit-image 
 
 ENV PYTHONPATH=/work/Superpatch_network_construction
@@ -27,7 +27,8 @@ ENV PYTHONPATH=/work/Superpatch_network_construction
 RUN apt-get -y install npm nodejs
 RUN npm install -g configurable-http-proxy
 RUN pip install jupyterhub jupyterlab
+RUN pip install pamela
 
 # 기본 커맨드 설정
-CMD ["python"]
+CMD ["jupyterhub"]
 
