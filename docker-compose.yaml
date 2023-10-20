@@ -12,6 +12,7 @@ services:
       - /etc/pam.d:/etc/pam.d
       - /etc/shadow:/etc/shadow
       - /etc/passwd:/etc/passwd
+      - /opt/conda/envs:/opt/conda/envs
     ports:
       - 8000:8000
     working_dir: /work
