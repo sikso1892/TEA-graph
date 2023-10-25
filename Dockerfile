@@ -29,6 +29,9 @@ RUN npm install -g configurable-http-proxy
 RUN pip install jupyterhub jupyterlab
 RUN pip install pamela
 
+# etc..
+RUN pip install matplotlib tifffile imagecodecs ipywidgets
+
 # 기본 커맨드 설정
 CMD ["jupyterhub"]
 

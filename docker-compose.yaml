@@ -13,6 +13,7 @@ services:
       - /etc/shadow:/etc/shadow
       - /etc/passwd:/etc/passwd
       - /opt/conda/envs:/opt/conda/envs
+      - /mnt/data:/mnt/data/
     ports:
       - 8000:8000
     working_dir: /work
